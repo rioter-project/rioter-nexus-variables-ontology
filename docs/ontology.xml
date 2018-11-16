@@ -1,0 +1,681 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/rioter/nexus#"
+     xml:base="http://w3id.org/rioter/nexus"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://w3id.org/rioter/nexus">
+        <owl:versionIRI rdf:resource="http://w3id.org/rioter/nexus"/>
+        <dc:contributor>Janez Susnik (UN-IHE)</dc:contributor>
+        <dc:contributor>Sara Masia (UN-IHE)</dc:contributor>
+        <dc:contributor>Xavier Domingo i Albin (Eurecat Technology Centre)</dc:contributor>
+        <dc:creator>Aitor Corchero (Eurecat technology Centre)</dc:creator>
+        <dc:creator>Eugene Westerhof (Wageningen University)</dc:creator>
+        <dc:creator>Lluis Echeverria (Eurecat Technology Centre)</dc:creator>
+        <dc:description>A semantic model aimed at describing water nexus relationship to support the generation of newer policies within a serious-game framework</dc:description>
+        <dc:source>nexus</dc:source>
+        <dc:title>Water Nexus Ontology to support generation of policies</dc:title>
+        <terms:created>01/09/2018</terms:created>
+        <terms:license>https://opensource.org/licenses/MIT</terms:license>
+        <terms:modified>16/11/2018</terms:modified>
+        <owl:versionInfo>1.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/rioter#containElement -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter#containElement"/>
+    
+
+
+    <!-- http://w3id.org/rioter#scale -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter#scale"/>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#ODEIndicatorss -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#ODEIndicatorss">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#State"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#ODEIndicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#SDMParameters -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#SDMParameters">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#Game"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter#Indicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#affectedIndicators -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#affectedIndicators">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#Policy"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter#Indicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#baseline -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#baseline">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#Game"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter#Indicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#event -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#event">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#Policy"/>
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#State"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#gameGoals -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#gameGoals">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#Game"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#initialState -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#initialState">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#StateEvolution"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#inputModel -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#inputModel">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#SystemDynamicModel"/>
+        <rdfs:range rdf:resource="http://w3id.org/saref#Measurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#nextState -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#nextState">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#StateEvolution"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#nexusComponent -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#nexusComponent">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter#Indicator"/>
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#Goal"/>
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#Policy"/>
+        <rdfs:domain rdf:resource="http://w3id.org/saref#Measurement"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#NexusComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#notCompatibleWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#notCompatibleWith">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#Policy"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#outputModel -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#outputModel">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#Model"/>
+        <rdfs:range rdf:resource="http://w3id.org/saref#Measurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#performanceIndicators -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#performanceIndicators">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#Goal"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#PerformanceIndicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#policyInstrument -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#policyInstrument">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#State"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#sdm -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#sdm">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#CaseStudy"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#SystemDynamicModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#stateEvolution -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#stateEvolution">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#Game"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#StateEvolution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#thematicModel -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#thematicModel">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#SystemDynamicModel"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#ThematicModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#users -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rioter/nexus#users">
+        <rdfs:domain rdf:resource="http://w3id.org/rioter/nexus#Game"/>
+        <rdfs:range rdf:resource="http://w3id.org/rioter/nexus#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/saref#index -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/saref#index"/>
+    
+
+
+    <!-- http://w3id.org/saref#isMeasuredBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/saref#isMeasuredBy"/>
+    
+
+
+    <!-- http://w3id.org/saref#relatesToProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/saref#relatesToProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#objective -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/rioter/nexus#objective">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/Person -->
+
+
+    <owl:Class rdf:about="http://schema.org/Person">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#Domain -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#Domain">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#Event -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#Event">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#Index -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#Index">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#IndexElement -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#IndexElement">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#Indicator -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#Indicator">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#Property -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#Property">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/saref#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#SampledFeature -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#SampledFeature">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter#Scale -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter#Scale">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#Action -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#Action">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/nexus#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#Anomaly -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#Anomaly">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/nexus#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#CaseStudy -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#CaseStudy">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#SampledFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#Contractual -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#Contractual">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/nexus#Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#Event -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#Event">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#Game -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#Game">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#Goal -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#Goal">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#Impact -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#Impact">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/nexus#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#Infrastructure -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#Infrastructure">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/nexus#Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#Model -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#Model">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#NexusComponent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#NexusComponent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#Domain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#ODEIndicator -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#ODEIndicator">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#Indicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#PerformanceIndicator -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#PerformanceIndicator">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter#Indicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#Policy -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#Policy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#State -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#State">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#StateEvolution -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#StateEvolution">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#SystemDynamicModel -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#SystemDynamicModel">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/nexus#Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#ThematicModel -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#ThematicModel">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rioter/nexus#Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rioter/nexus#User -->
+
+
+    <owl:Class rdf:about="http://w3id.org/rioter/nexus#User">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/saref#Measurement -->
+
+
+    <owl:Class rdf:about="http://w3id.org/saref#Measurement">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/saref#Property -->
+
+
+    <owl:Class rdf:about="http://w3id.org/saref#Property">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/saref#UnitOfMeasure -->
+
+
+    <owl:Class rdf:about="http://w3id.org/saref#UnitOfMeasure">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,330 @@
+<http://w3id.org/rioter/nexus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/rioter/nexus> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/rioter/nexus> .
+<http://w3id.org/rioter/nexus> <http://purl.org/dc/elements/1.1/contributor> "Janez Susnik (UN-IHE)" .
+<http://w3id.org/rioter/nexus> <http://purl.org/dc/elements/1.1/contributor> "Sara Masia (UN-IHE)" .
+<http://w3id.org/rioter/nexus> <http://purl.org/dc/elements/1.1/contributor> "Xavier Domingo i Albin (Eurecat Technology Centre)" .
+<http://w3id.org/rioter/nexus> <http://purl.org/dc/elements/1.1/creator> "Aitor Corchero (Eurecat technology Centre)" .
+<http://w3id.org/rioter/nexus> <http://purl.org/dc/elements/1.1/creator> "Eugene Westerhof (Wageningen University)" .
+<http://w3id.org/rioter/nexus> <http://purl.org/dc/elements/1.1/creator> "Lluis Echeverria (Eurecat Technology Centre)" .
+<http://w3id.org/rioter/nexus> <http://purl.org/dc/elements/1.1/description> "A semantic model aimed at describing water nexus relationship to support the generation of newer policies within a serious-game framework" .
+<http://w3id.org/rioter/nexus> <http://purl.org/dc/elements/1.1/source> "nexus" .
+<http://w3id.org/rioter/nexus> <http://purl.org/dc/elements/1.1/title> "Water Nexus Ontology to support generation of policies" .
+<http://w3id.org/rioter/nexus> <http://purl.org/dc/terms/created> "01/09/2018" .
+<http://w3id.org/rioter/nexus> <http://purl.org/dc/terms/license> "https://opensource.org/licenses/MIT" .
+<http://w3id.org/rioter/nexus> <http://purl.org/dc/terms/modified> "16/11/2018" .
+<http://w3id.org/rioter/nexus> <http://www.w3.org/2002/07/owl#versionInfo> "1.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/rioter#containElement
+<http://w3id.org/rioter#containElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://w3id.org/rioter#scale
+<http://w3id.org/rioter#scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://w3id.org/rioter/nexus#ODEIndicatorss
+<http://w3id.org/rioter/nexus#ODEIndicatorss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#ODEIndicatorss> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#State> .
+<http://w3id.org/rioter/nexus#ODEIndicatorss> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#ODEIndicator> .
+# 
+# http://w3id.org/rioter/nexus#SDMParameters
+<http://w3id.org/rioter/nexus#SDMParameters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#SDMParameters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#Game> .
+<http://w3id.org/rioter/nexus#SDMParameters> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#Indicator> .
+# 
+# http://w3id.org/rioter/nexus#affectedIndicators
+<http://w3id.org/rioter/nexus#affectedIndicators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#affectedIndicators> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#Policy> .
+<http://w3id.org/rioter/nexus#affectedIndicators> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#Indicator> .
+# 
+# http://w3id.org/rioter/nexus#baseline
+<http://w3id.org/rioter/nexus#baseline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#baseline> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#Game> .
+<http://w3id.org/rioter/nexus#baseline> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#Indicator> .
+# 
+# http://w3id.org/rioter/nexus#event
+<http://w3id.org/rioter/nexus#event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#Policy> .
+<http://w3id.org/rioter/nexus#event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#State> .
+<http://w3id.org/rioter/nexus#event> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#Event> .
+# 
+# http://w3id.org/rioter/nexus#gameGoals
+<http://w3id.org/rioter/nexus#gameGoals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#gameGoals> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#Game> .
+<http://w3id.org/rioter/nexus#gameGoals> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#Goal> .
+# 
+# http://w3id.org/rioter/nexus#initialState
+<http://w3id.org/rioter/nexus#initialState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#initialState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#StateEvolution> .
+<http://w3id.org/rioter/nexus#initialState> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#State> .
+# 
+# http://w3id.org/rioter/nexus#inputModel
+<http://w3id.org/rioter/nexus#inputModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#inputModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#SystemDynamicModel> .
+<http://w3id.org/rioter/nexus#inputModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/saref#Measurement> .
+# 
+# http://w3id.org/rioter/nexus#nextState
+<http://w3id.org/rioter/nexus#nextState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#nextState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#StateEvolution> .
+<http://w3id.org/rioter/nexus#nextState> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#State> .
+# 
+# http://w3id.org/rioter/nexus#nexusComponent
+<http://w3id.org/rioter/nexus#nexusComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#nexusComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Indicator> .
+<http://w3id.org/rioter/nexus#nexusComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#Goal> .
+<http://w3id.org/rioter/nexus#nexusComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#Policy> .
+<http://w3id.org/rioter/nexus#nexusComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/saref#Measurement> .
+<http://w3id.org/rioter/nexus#nexusComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#NexusComponent> .
+# 
+# http://w3id.org/rioter/nexus#notCompatibleWith
+<http://w3id.org/rioter/nexus#notCompatibleWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#notCompatibleWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#Policy> .
+<http://w3id.org/rioter/nexus#notCompatibleWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#Policy> .
+# 
+# http://w3id.org/rioter/nexus#outputModel
+<http://w3id.org/rioter/nexus#outputModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#outputModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#Model> .
+<http://w3id.org/rioter/nexus#outputModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/saref#Measurement> .
+# 
+# http://w3id.org/rioter/nexus#performanceIndicators
+<http://w3id.org/rioter/nexus#performanceIndicators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#performanceIndicators> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#Goal> .
+<http://w3id.org/rioter/nexus#performanceIndicators> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#PerformanceIndicator> .
+# 
+# http://w3id.org/rioter/nexus#policyInstrument
+<http://w3id.org/rioter/nexus#policyInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#policyInstrument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#State> .
+<http://w3id.org/rioter/nexus#policyInstrument> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#Policy> .
+# 
+# http://w3id.org/rioter/nexus#sdm
+<http://w3id.org/rioter/nexus#sdm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#sdm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#CaseStudy> .
+<http://w3id.org/rioter/nexus#sdm> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#SystemDynamicModel> .
+# 
+# http://w3id.org/rioter/nexus#stateEvolution
+<http://w3id.org/rioter/nexus#stateEvolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#stateEvolution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#Game> .
+<http://w3id.org/rioter/nexus#stateEvolution> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#StateEvolution> .
+# 
+# http://w3id.org/rioter/nexus#thematicModel
+<http://w3id.org/rioter/nexus#thematicModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#thematicModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#SystemDynamicModel> .
+<http://w3id.org/rioter/nexus#thematicModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#ThematicModel> .
+# 
+# http://w3id.org/rioter/nexus#users
+<http://w3id.org/rioter/nexus#users> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter/nexus#users> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter/nexus#Game> .
+<http://w3id.org/rioter/nexus#users> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter/nexus#User> .
+# 
+# http://w3id.org/saref#index
+<http://w3id.org/saref#index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://w3id.org/saref#isMeasuredBy
+<http://w3id.org/saref#isMeasuredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://w3id.org/saref#relatesToProperty
+<http://w3id.org/saref#relatesToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/rioter/nexus#objective
+<http://w3id.org/rioter/nexus#objective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter/nexus#objective> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Person
+<http://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent> .
+# 
+# http://w3id.org/rioter#Domain
+<http://w3id.org/rioter#Domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Domain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#Event
+<http://w3id.org/rioter#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#Index
+<http://w3id.org/rioter#Index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Index> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#IndexElement
+<http://w3id.org/rioter#IndexElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#IndexElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#Indicator
+<http://w3id.org/rioter#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#Property
+<http://w3id.org/rioter#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/saref#Property> .
+# 
+# http://w3id.org/rioter#SampledFeature
+<http://w3id.org/rioter#SampledFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#SampledFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#Scale
+<http://w3id.org/rioter#Scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Scale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter/nexus#Action
+<http://w3id.org/rioter/nexus#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/nexus#Event> .
+# 
+# http://w3id.org/rioter/nexus#Anomaly
+<http://w3id.org/rioter/nexus#Anomaly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#Anomaly> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/nexus#Event> .
+# 
+# http://w3id.org/rioter/nexus#CaseStudy
+<http://w3id.org/rioter/nexus#CaseStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#CaseStudy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#SampledFeature> .
+# 
+# http://w3id.org/rioter/nexus#Contractual
+<http://w3id.org/rioter/nexus#Contractual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#Contractual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/nexus#Policy> .
+# 
+# http://w3id.org/rioter/nexus#Event
+<http://w3id.org/rioter/nexus#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#Event> .
+# 
+# http://w3id.org/rioter/nexus#Game
+<http://w3id.org/rioter/nexus#Game> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#Game> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter/nexus#Goal
+<http://w3id.org/rioter/nexus#Goal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#Goal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+# 
+# http://w3id.org/rioter/nexus#Impact
+<http://w3id.org/rioter/nexus#Impact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#Impact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/nexus#Event> .
+# 
+# http://w3id.org/rioter/nexus#Infrastructure
+<http://w3id.org/rioter/nexus#Infrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#Infrastructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/nexus#Policy> .
+# 
+# http://w3id.org/rioter/nexus#Model
+<http://w3id.org/rioter/nexus#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter/nexus#NexusComponent
+<http://w3id.org/rioter/nexus#NexusComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#NexusComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#Domain> .
+# 
+# http://w3id.org/rioter/nexus#ODEIndicator
+<http://w3id.org/rioter/nexus#ODEIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#ODEIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#Indicator> .
+# 
+# http://w3id.org/rioter/nexus#PerformanceIndicator
+<http://w3id.org/rioter/nexus#PerformanceIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#PerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#Indicator> .
+# 
+# http://w3id.org/rioter/nexus#Policy
+<http://w3id.org/rioter/nexus#Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#Policy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter/nexus#State
+<http://w3id.org/rioter/nexus#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter/nexus#StateEvolution
+<http://w3id.org/rioter/nexus#StateEvolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#StateEvolution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter/nexus#SystemDynamicModel
+<http://w3id.org/rioter/nexus#SystemDynamicModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#SystemDynamicModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/nexus#Model> .
+# 
+# http://w3id.org/rioter/nexus#ThematicModel
+<http://w3id.org/rioter/nexus#ThematicModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#ThematicModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter/nexus#Model> .
+# 
+# http://w3id.org/rioter/nexus#User
+<http://w3id.org/rioter/nexus#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter/nexus#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Person> .
+# 
+# http://w3id.org/saref#Measurement
+<http://w3id.org/saref#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/saref#Property
+<http://w3id.org/saref#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/saref#UnitOfMeasure
+<http://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

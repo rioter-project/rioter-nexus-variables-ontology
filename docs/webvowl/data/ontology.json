@@ -1,0 +1,1038 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl", "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://w3id.org/rioter/nexus", "http://www.w3.org/2001/XMLSchema", "http://w3id.org/rioter", "http://w3id.org/saref" ],
+    "title" : {
+      "undefined" : "Water Nexus Ontology to support generation of policies"
+    },
+    "iri" : "http://w3id.org/rioter/nexus",
+    "version" : "1.1",
+    "author" : [ "Aitor Corchero (Eurecat technology Centre)", "Eugene Westerhof (Wageningen University)", "Lluis Echeverria (Eurecat Technology Centre)" ],
+    "description" : {
+      "undefined" : "A semantic model aimed at describing water nexus relationship to support the generation of newer policies within a serious-game framework"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://opensource.org/licenses/MIT",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Lluis Echeverria (Eurecat Technology Centre)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Aitor Corchero (Eurecat technology Centre)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Eugene Westerhof (Wageningen University)",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Janez Susnik (UN-IHE)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Xavier Domingo i Albin (Eurecat Technology Centre)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Sara Masia (UN-IHE)",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "01/09/2018",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "16/11/2018",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "nexus",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Water Nexus Ontology to support generation of policies",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 36,
+    "objectPropertyCount" : 23,
+    "datatypePropertyCount" : 1,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/rioter/nexus#Anomaly",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Anomaly"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#ThematicModel",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThematicModel"
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#Game",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Game"
+    },
+    "id" : "10"
+  }, {
+    "iri" : "http://schema.org/Person",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://w3id.org/rioter#Indicator",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Indicator"
+    },
+    "subClasses" : [ "15", "16" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialAgent"
+    },
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "20", "21" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#Event",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "3", "23", "24" ],
+    "id" : "4",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://w3id.org/saref#Property",
+    "baseIri" : "http://w3id.org/saref",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "subClasses" : [ "26" ],
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#ODEIndicator",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ODEIndicator"
+    },
+    "id" : "16",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/rioter#Scale",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Scale"
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://w3id.org/rioter#Index",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Index"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#StateEvolution",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateEvolution"
+    },
+    "id" : "18"
+  }, {
+    "iri" : "http://w3id.org/saref#UnitOfMeasure",
+    "baseIri" : "http://w3id.org/saref",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnitOfMeasure"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#Goal",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Goal"
+    },
+    "id" : "44",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#Action",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "id" : "23",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#NexusComponent",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NexusComponent"
+    },
+    "id" : "29",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object"
+    },
+    "subClasses" : [ "20", "21" ],
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://w3id.org/rioter#Event",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://w3id.org/rioter#Property",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#SystemDynamicModel",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SystemDynamicModel"
+    },
+    "id" : "50",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#State",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "State"
+    },
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#Infrastructure",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Infrastructure"
+    },
+    "id" : "42",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#PerformanceIndicator",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PerformanceIndicator"
+    },
+    "id" : "15",
+    "superClasses" : [ "2" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "44", "1", "64" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "28"
+  }, {
+    "instances" : 0,
+    "union" : [ "19", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#Impact",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Impact"
+    },
+    "id" : "24",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialObject"
+    },
+    "subClasses" : [ "14", "44" ],
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#Contractual",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Contractual"
+    },
+    "id" : "40",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#Model",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Model"
+    },
+    "subClasses" : [ "50", "7" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://w3id.org/rioter#IndexElement",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndexElement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#User",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "User"
+    },
+    "id" : "11",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://w3id.org/rioter#Domain",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Domain"
+    },
+    "subClasses" : [ "29" ],
+    "attributes" : [ "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://w3id.org/saref#Measurement",
+    "baseIri" : "http://w3id.org/saref",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Measurement"
+    },
+    "attributes" : [ "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://w3id.org/rioter#SampledFeature",
+    "baseIri" : "http://w3id.org/rioter",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SampledFeature"
+    },
+    "subClasses" : [ "34" ],
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#Policy",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Policy"
+    },
+    "subClasses" : [ "42", "40" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#CaseStudy",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CaseStudy"
+    },
+    "id" : "34",
+    "superClasses" : [ "35" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/rioter/nexus#affectedIndicators",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "affectedIndicators"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://w3id.org/saref#index",
+    "baseIri" : "http://w3id.org/saref",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "index"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#users",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "users"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id.org/saref#relatesToProperty",
+    "baseIri" : "http://w3id.org/saref",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "relatesToProperty"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#nextState",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "nextState"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#nexusComponent",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "nexusComponent"
+    },
+    "domain" : "28",
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#notCompatibleWith",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "notCompatibleWith"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "range" : "35",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "37",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "1",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "1",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#performanceIndicators",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "performanceIndicators"
+    },
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#SDMParameters",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "SDMParameters"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#objective",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "objective"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "range" : "8",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#stateEvolution",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "stateEvolution"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "range" : "21",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "22",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "48",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "21",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "20",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "4",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#event",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "event"
+    },
+    "domain" : "60",
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "range" : "48",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "25",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#policyInstrument",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "policyInstrument"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#thematicModel",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "thematicModel"
+    },
+    "domain" : "50",
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "range" : "13",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "2",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "4",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#gameGoals",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "gameGoals"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#sdm",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "sdm"
+    },
+    "domain" : "34",
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://w3id.org/saref#isMeasuredBy",
+    "baseIri" : "http://w3id.org/saref",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isMeasuredBy"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#outputModel",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "outputModel"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://w3id.org/rioter#containElement",
+    "baseIri" : "http://w3id.org/rioter",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "containElement"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#baseline",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "baseline"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#inputModel",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "inputModel"
+    },
+    "domain" : "50",
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#initialState",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "initialState"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://w3id.org/rioter#scale",
+    "baseIri" : "http://w3id.org/rioter",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "scale"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://w3id.org/rioter/nexus#ODEIndicatorss",
+    "baseIri" : "http://w3id.org/rioter/nexus",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "ODEIndicatorss"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "82"
+  } ]
+}
