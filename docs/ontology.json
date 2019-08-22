@@ -23,10 +23,260 @@
   "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://schema.org/Person",
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Janez Susnik (UN-IHE)"
+  }, {
+    "@value" : "Sara Masia (UN-IHE)"
+  }, {
+    "@value" : "Xavier Domingo i Albin (Eurecat Technology Centre)"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Aitor Corchero (Eurecat technology Centre)"
+  }, {
+    "@value" : "Eugene Westerhof (Wageningen University)"
+  }, {
+    "@value" : "Lluis Echeverria (Eurecat Technology Centre)"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "The role of the SIM4NEXUS ontology is to support the data and variables harmonization for the different models to be implemented at case-study level (thematic models and system dynamic models) as well as policy and game data. Indeed, the SIM4NEXUS ontology will permit the \"Knowledge Elicitation Engine\" (KEE) to analyse the inforamtion and to perform the policies recomendations to the game. Considering this aspects, main features of the ontology are: \n 1. A model to categorise and describe the variables of the nexus. \n 2. A model to represent the polici cards and objectives associated to a Game. \n 3. A model to represent the information related to the context of the game. "
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@value" : "nexus"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Water Nexus Ontology to support generation of policies"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "01/09/2018"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://opensource.org/licenses/MIT"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "22/08/2019"
+  } ],
+  "http://spinrdf.org/spin#imports" : [ {
+    "@id" : "http://topbraid.org/spin/owlrl-all"
+  }, {
+    "@id" : "http://topbraid.org/spin/spinowl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.2"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#Action",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent"
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Event"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#Anomaly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Event"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#CaseStudy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#SampledFeature"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#Contractual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Policy"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#Event"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#GameGoal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Goal"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#Goal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#Impact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Event"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#Infrastructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Policy"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#LearningGoal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Goal"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#Model",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#NexusComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#Domain"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#Policy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#PolicyGoal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Goal"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#PolicyObjective",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/rioter#SampledFeature"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#SystemDynamicModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Model"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#ThematicModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Model"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#belongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#contributeTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#eurbdcode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Policy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Event"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#implementedInstrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#indicators",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/rioter#Indicator"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#inputModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#SystemDynamicModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/saref#Measurement"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#nexusComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Goal"
+  }, {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Policy"
+  }, {
+    "@id" : "http://w3id.org/rioter#Indicator"
+  }, {
+    "@id" : "http://w3id.org/saref#Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#NexusComponent"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#notCompatibleWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Policy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Policy"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#outputModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#Model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/saref#Measurement"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#rdbname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#sdm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#CaseStudy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#SystemDynamicModel"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#surface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://seriousgame.sim4nexus.eu/ontology#thematicModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#SystemDynamicModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#ThematicModel"
   } ]
 }, {
   "@id" : "http://w3id.org/rioter#Domain",
@@ -56,7 +306,7 @@
   "@id" : "http://w3id.org/rioter#Indicator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    "@id" : "http://w3id.org/saref#Measurement"
   } ]
 }, {
   "@id" : "http://w3id.org/rioter#Property",
@@ -80,339 +330,38 @@
   "@id" : "http://w3id.org/rioter#containElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://w3id.org/rioter#scale",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@value" : "Janez Susnik (UN-IHE)"
-  }, {
-    "@value" : "Sara Masia (UN-IHE)"
-  }, {
-    "@value" : "Xavier Domingo i Albin (Eurecat Technology Centre)"
-  } ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Aitor Corchero (Eurecat technology Centre)"
-  }, {
-    "@value" : "Eugene Westerhof (Wageningen University)"
-  }, {
-    "@value" : "Lluis Echeverria (Eurecat Technology Centre)"
-  } ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "A semantic model aimed at describing water nexus relationship to support the generation of newer policies within a serious-game framework"
-  } ],
-  "http://purl.org/dc/elements/1.1/source" : [ {
-    "@value" : "nexus"
-  } ],
-  "http://purl.org/dc/elements/1.1/title" : [ {
-    "@value" : "Water Nexus Ontology to support generation of policies"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@value" : "01/09/2018"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@value" : "https://opensource.org/licenses/MIT"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "16/11/2018"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://w3id.org/rioter/nexus"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.1"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#Action",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Event"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#Anomaly",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Event"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#CaseStudy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/rioter#SampledFeature"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#Contractual",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Policy"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#Event",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/rioter#Event"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#Game",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#Goal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#Impact",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Event"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#Infrastructure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Policy"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#Model",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#NexusComponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/rioter#Domain"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#ODEIndicator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/rioter#Indicator"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#ODEIndicatorss",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#State"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#ODEIndicator"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#PerformanceIndicator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/rioter#Indicator"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#Policy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#SDMParameters",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Game"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter#Indicator"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#State",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#StateEvolution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#SystemDynamicModel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Model"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#ThematicModel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Model"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#User",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://schema.org/Person"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#affectedIndicators",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Policy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter#Indicator"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#baseline",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Game"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter#Indicator"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#event",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Policy"
-  }, {
-    "@id" : "http://w3id.org/rioter/nexus#State"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Event"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#gameGoals",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Game"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Goal"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#initialState",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#StateEvolution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#State"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#inputModel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#SystemDynamicModel"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/saref#Measurement"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#nextState",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#StateEvolution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#State"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#nexusComponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter#Indicator"
-  }, {
-    "@id" : "http://w3id.org/rioter/nexus#Goal"
-  }, {
-    "@id" : "http://w3id.org/rioter/nexus#Policy"
-  }, {
-    "@id" : "http://w3id.org/saref#Measurement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#NexusComponent"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#notCompatibleWith",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Policy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Policy"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#objective",
+  "@id" : "http://w3id.org/rioter#description",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://w3id.org/rioter/nexus#outputModel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Model"
-  } ],
+  "@id" : "http://w3id.org/rioter#identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/saref#Measurement"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://w3id.org/rioter/nexus#performanceIndicators",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Goal"
-  } ],
+  "@id" : "http://w3id.org/rioter#maxValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://w3id.org/rioter#minValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://w3id.org/rioter#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#PerformanceIndicator"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://w3id.org/rioter/nexus#policyInstrument",
+  "@id" : "http://w3id.org/rioter#policyGoals",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#State"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Policy"
+    "@id" : "http://seriousgame.sim4nexus.eu/ontology#CaseStudy"
   } ]
 }, {
-  "@id" : "http://w3id.org/rioter/nexus#sdm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#CaseStudy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#SystemDynamicModel"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#stateEvolution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Game"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#StateEvolution"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#thematicModel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#SystemDynamicModel"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#ThematicModel"
-  } ]
-}, {
-  "@id" : "http://w3id.org/rioter/nexus#users",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#Game"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/rioter/nexus#User"
-  } ]
+  "@id" : "http://w3id.org/rioter#scale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://w3id.org/saref#Measurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -440,30 +389,4 @@
 }, {
   "@id" : "http://w3id.org/saref#relatesToProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
-  } ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
-  }, {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"
-  } ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
-  } ]
 } ]
